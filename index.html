@@ -8,6 +8,12 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
    
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
    <!--HEADER-->
@@ -40,15 +46,18 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="#top">HOME</a>
+             </li>
              <li class="nav-item">
-               <a class="nav-link" href="#top">ABOUT</a>
+               <a class="nav-link" href="#about">À propos de moi</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="#resume">RESUME</a>
              </li>
-             <li class="nav-item">
+             <!-- <li class="nav-item">
                <a class="nav-link" href="#projects">PROJECTS</a>
-             </li>
+             </li> -->
              <li class="nav-item">
                <a class="nav-link " href="#contact">CONTACT</a>
              </li>
@@ -57,107 +66,37 @@
        </nav>
       </div>
       <!---ABOUT START-->
-      <div class="about container" id="SkillBox"> 
-         <div class="row">
-            <!-- <div class="col-md-6 text-center">
+      <div class="container" id="props">
+         <div class="col-md-6">
+            <h3>À propos de moi</h3>
+            <p>  Après mon arrivée en France en 2017, et après deux ans de cours de français,
+                j'ai réussi à rejoindre une formation “développeur Full-Stack” chez Konexio en Mai dernier. 
+                En Egypte, j'ai obtenu un diplôme en droit de l'Université du Caire.
+
+               Depuis mon arrivée en France, j'ai toujours voulu poursuivre mes études dans le domaine du Droit, 
+               puis j'ai découvert au hasard le Développement Web lors d'un cours de français, depuis j'ai décidé de m'y mettre et de changer de domaine.
+               
+               Ce que j'aime dans la programmation, c'est que je peux créer quelque chose et que je peux le voir immédiatement.
+               Je peux le montrer aux gens, les gens peuvent interagir avec. J'apprécie aussi la partie esthétique, le côté créatif et visuel, j'aime développer,
+                transformer des idées en choses visuelles. et j'apprécie le fait que j'apprends chaque jour quelque chose de nouveau. Je suis une personne très volontaire et cela m'aide à trouver des solutions de développement. 
+            </p>
+         </div>
+      </div>
+
+      
+      <div class="about container" id="about"> 
+         <!-- <div class="row">
+            <div class="col-md-6 text-center">
                <img src="./images/header-e.jpg" alt="Emad" class="my-img">
 
-            </div> -->
+            </div>
          </div>
-         <div class="col-md-6">
-            <h3>About me</h3>
-            <p> Après mon arrivée en France en 2017, et après deux ans de cours de français, j'ai réussi à rejoindre une formation “développeur Full-Stack” chez Konexio en Mai dernier. En Egypte, j'ai obtenu un diplôme en droit de l'Université du Caire.
-
-               Depuis mon arrivée en France, j'ai toujours voulu poursuivre mes études dans le domaine du Droit, puis j'ai découvert au hasard le Développement Web lors d'un cours de français, depuis j'ai décidé de m'y mettre et de changer de domaine.
-               
-               Ce que j'aime dans la programmation, c'est que je peux créer quelque chose et que je peux le voir immédiatement. Je peux le montrer aux gens, les gens peuvent interagir avec. J'apprécie aussi la partie esthétique, le côté créatif et visuel, j'aime développer, transformer des idées en choses visuelles. et j'apprécie le fait que j'apprends chaque jour quelque chose de nouveau. Je suis une personne très volontaire et cela m'aide à trouver des solutions de développement. 
-            </p>
-
-
-            
-               <div id="SkillBox">
-                      <p class="text-center">My Skills</p>
-                       <img src="./images/emoji.png" alt="emoji" />
-                 <div class="SkillBar">
-                   <div id="Skill-HTML"> 
-                     <span class="Skill-Area ">HTML</span>
-                     <span class="PercentText ">82%</span>
-                   </div>
-                 </div>
-                 
-                 <div class="SkillBar">
-                   <div id="Skill-CSS">
-                     <span class="Skill-Area ">CSS/CSS3</span>
-                     <span class="PercentText ">70%</span>
-                   </div>
-                 </div>
-               
-                 <div class="SkillBar">
-                   <div id="Skill-jQuery">
-                     <span class="Skill-Area ">jQuery</span>
-                     <span class="PercentText ">55%</span>
-                   </div>
-                 </div>
-                 
-                 <div class="SkillBar">
-                   <div id="Skill-JS">
-                     <span class="Skill-Area ">Javascript</span>
-                     <span class="PercentText ">65%</span>
-                   </div>
-                 </div>
-                 
-                 <div class="SkillBar">
-                   <div id="Skill-XML">
-                     <span class="Skill-Area ">Bootstrap </span>
-                     <span class="PercentText ">84%</span>
-                   </div>
-                 </div>
-                 
-                   <div class="SkillBar">
-                   <div id="Skill-mongo">
-                     <span class="Skill-Area ">MongoDB</span>
-                     <span class="PercentText ">70%</span>
-                   </div>
-                 </div>
-                 
-                   <div class="SkillBar">
-                   <div id="Skill-JAVA">
-                     <span class="Skill-Area ">ReactJS </span>
-                     <span class="PercentText ">25%</span>
-                   </div>
-                 </div>
-                 
-                   <div class="SkillBar">
-                   <div id="Skill-PHP">
-                     <span class="Skill-Area ">ExpressJS </span>
-                     <span class="PercentText ">75%</span>
-                   </div>
-                 </div>
-                 
-                   <div class="SkillBar">
-                   <div id="Skill-SQL">
-                     <span class="Skill-Area ">ReactJS </span>
-                     <span class="PercentText ">55%</span>
-                   </div>
-                 </div>
-                 
-                   <div class="SkillBar">
-                   <div id="Skill-VBNET">
-                     <span class="Skill-Area ">SQL</span>
-                     <span class="PercentText ">35%</span>
-                   </div>
-                 </div>
-                 
-               </div>
-               
+          -->
          
 
-
-
-
-<!--             
             <div class="skills-bar">
-               <h1>Compétences</h1>
+               <img src="./images/emoji.png" alt="emoji" />
+               <h1 style="text-align: center;"> Mes Compétences</h1>
                <h1>Front-End</h1>
                <p>HTML</p>
                <div class="progress">
@@ -198,7 +137,7 @@
                
                
                
-            </div> -->
+            </div>
 
 
 
@@ -212,14 +151,14 @@
 
       <div class="social">
          <ul>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/emad-ibrahim-moussa-2b411116b/" target="_blank">
                <li><i class="fa fa-linkedin"></i> </li>
             </a>
-            <a href="#">
-               <li><i class="fa fa-github"></i> </li>
+            <a href="https://github.com/" target="_blank">
+               <li><i class="fa fa-github" target="_blank"></i> </li>
             </a>
             <a href="#">
-               <li><i class="fa fa-twitter"></i> </li>
+               <li><i class="fa fa-twitter" target="_blank"></i> </li>
             </a>
          </ul>
       </div>
@@ -293,7 +232,7 @@
    <!----Resume END---->
 
    <!----PROJECTS START---->
-   <div class="projects" id="projects">
+   <!-- <div class="projects" id="projects">
       <div class="container">
          <h1 class="text-center">Technologies that i use </h1>
          <p class="text-center"> Examples of projects are on my <a href="https://github.com/EmadIbrahimm">github</a> Page </p>
@@ -331,7 +270,7 @@
          </div>
       </div>
    </div>
-   
+    -->
 
 
    <!----PROJECTS END---->
@@ -339,7 +278,7 @@
    <!-----CONTACT START----->
    <div class="contact" id="contact">
       <div class="container text-center">
-         <h1 style="color:#eb5424;">Contact Me</h1>
+         <h1 >Contact Me</h1>
          <p class="text-center">
             <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorem sequi cumque provident modi quam dolorum. <br> -->
          </p>
@@ -355,7 +294,7 @@
             
             <button type="button" class="btn btn-primary text-center"> 
                <i class="fa fa-download "></i> 
-                Télécharger mon CV
+                <a href="./images/CVEMADPDF.pdf"> Télécharger mon CV</a>
             </button>
          </div>
       </div>

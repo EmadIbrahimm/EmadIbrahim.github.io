@@ -5,12 +5,22 @@ body {
 }
 
 #header {
-    height: 100vh;
+    /* height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.021), rgba(0,0,0,0.8)), url(./images/sudan.jpeg);
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
-}
+    background-size: cover; */
+
+    align-items: center;
+	background-color: #202020;
+	background-image: radial-gradient(10% 100% ellipse at bottom center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	transition: background-color 2s cubic-bezier(0.19, 1, 0.22, 1);
+} 
 
 .my-box {
     top: 50%;
@@ -22,10 +32,39 @@ body {
     width: 50%;
     border: 1px solid darkblue;
     border-radius: 50%;
+
 }
 .my-box h1, h2 {
     color: #FFF;
+    
+    font-family: 'Roboto', sans-serif;
 }
+
+#info {
+    /* background-image: radial-gradient(10% 100% ellipse at bottom center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%); */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.7)), url(./images/sudan.jpeg);
+
+
+}
+
+
+/* 
+#shiny {
+	align-items: center;
+	background-color: #202020;
+	background-image: radial-gradient(10% 100% ellipse at bottom center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	transition: background-color 2s cubic-bezier(0.19, 1, 0.22, 1);
+} */
+
+
+
+
+
 .scroll-btn {
     bottom: 30px ;
     position: absolute;
@@ -48,17 +87,57 @@ body {
     100%{transform: translateY(10px);}
 }
 
-.about {
-    padding-top: 100px;
-    /* margin-bottom: -130px; */
-    background: #E9E5E2;
-    margin:2%;
+#about {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 95%;
+    color: #f5f5f5;
+    height: auto;
+    padding-left: 50px;
+    margin: 40px auto;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;
+    background: rgb(54, 85, 119);  
 
 }
+#props {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+     width: 95%;
+    text-align: center;
+    color: #f5f5f5;
+    height: auto; 
+    /* padding-left: 50px; */
+    margin: 40px auto;
+    border: 1px solid #cdcdcd;
+    padding: 50px; 
 
-.my-img {
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;
+    background: rgb(54, 85, 119);  
+
+}
+#props p {
+    text-align: center;
+}
+.skills-bar img {
+    width: 20%;
+    height: 10%;
+    margin: auto 40%;
+    padding: 10px;
+}
+
+/* .my-img {
     height: 400px;
-}
+} */
 .nav-bar {
     top: 0%;
     position: sticky;
@@ -106,11 +185,13 @@ body {
     padding-top : 50px;
     padding-bottom: 30px;
     background: #f9f9f9;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.resume h3 {
+/* .resume h3 {
     padding-bottom: 50px;
-}
+} */
 
 .timeline {
     list-style: none;
@@ -158,7 +239,7 @@ body {
 }
 
 /*---projects----*/
-
+/* 
 .projects {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -196,12 +277,12 @@ body {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     transition: 1s;
-}
+} */
 
 /*------CONTACT-----*/
 .contact {
     padding-top: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.021), rgba(0,0,0,0.8)), url(./images/sudan.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.7)), url(./images/sudan.jpeg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -211,6 +292,16 @@ body {
     padding: 30px 0;
     font-size: 22px;
     color: #f5f5f5;
+}
+.contact h1 {
+    color: #f5f5f5;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.contact p {
+    color: #f5f5f5;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact .col-md-4 .fa {
@@ -225,12 +316,14 @@ body {
     background: transparent;
 }
 .contact .btn:focus {
-    box-shadow: none !important;
+    box-shadow: none ;
 }
 .contact .btn:hover {
-    border: 2px;
-    background: #000 !important;
+    /* border: 2px; */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.7)), url(./images/sudan.jpeg);
     transition: 0.6;
+    
+
 }
 .contact .btn .fa {
     margin-right: 10px;
@@ -267,7 +360,7 @@ body {
     margin-top: 5px;
     padding-top: 6px;
     color:#FFF;
-    background: #000;
+    background: rgb(54, 85, 119);
 }
 .social ul li:hover {
     padding-left: 25px;
@@ -276,404 +369,3 @@ body {
 }
 
 /*------SKILLS SECTION-------*/
-#SkillBox {
-    font-size: 18px;
-    font-family: 'Ropoto' sans-serif;
-    width: 95%;
-    height: auto;
-    padding-left: 50px;
-    margin: 40px auto;
-    background-color: #fff;
-    border: 1px solid #cdcdcd;
-    padding: 10px;
-    border-radius:20px;
-    -o-border-radius:20px;
-    -webkit-border-radius:20px;
-    -ms-border-radius:20px;
-    -moz-border-radius:20px;  
-}
-#SkillBox img {
-    width: 20%;
-    height: 10%;
-    margin: auto 40%;
-    padding: 10px;
-}
-.SkillBar {
-    width: 90%;
-    height: 50px;
-    position: relative;
-    background: rgba(17, 17, 17, .3);
-    margin: 20px auto;
-}
-#Skill-HTML {
-    width: 100%;
-    animation: Animate-HTML 3s;
-    -webkit-animation: Animate-HTML 3s;
-    -moz-animation: Animate-HTML 3s;
-    -o-animation: Animate-HTML 3s;
-    height: 50px;
-    position: absolute;
-    background-color: #ea8564;
-}
-@keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 100%}
-}@-webkit-keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 100%}
-}@-moz-keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 100%}
-}@-o-keyframes Animate-HTML {
-    from {
-    width: 10px;
-}
-to {
-    width: 100%}
-}
-#Skill-CSS {
-    animation: Animate-CSS 3s;
-    -webkit-animation: Animate-CSS 3s;
-    -moz-animation: Animate-CSS 3s;
-    -o-animation: Animate-CSS 3s;
-    width: 70%;
-    height: 50px;
-    position: absolute;
-    background-color: #55a69f;
-}
-@keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 70%}
-}@-webkit-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 70%}
-}@-moz-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 70%}
-}@-o-keyframes Animate-CSS {
-    from {
-    width: 10px;
-}
-to {
-    width: 70%}
-}
-#Skill-jQuery {
-    animation: Animate-jQuery 3s;
-    -webkit-animation: Animate-jQuery 3s;
-    -moz-animation: Animate-jQuery 3s;
-    -o-animation: Animate-jQuery 3s;
-    width: 55%;
-    height: 50px;
-    position: absolute;
-    background-color: #99856d;
-}
-@keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-moz-keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-o-keyframes Animate-jQuery {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}
-#Skill-JS {
-    animation: Animate-JS 3s;
-    -webkit-animation: Animate-JS 3s;
-    -moz-animation: Animate-JS 3s;
-    -o-animation: Animate-JS 3s;
-    width: 65%;
-    height: 50px;
-    position: absolute;
-    background-color: #c44e45;
-}
-@keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 65%}
-}@-webkit-keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 65%}
-}@-moz-keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 65%}
-}@-o-keyframes Animate-JS {
-    from {
-    width: 10px;
-}
-to {
-    width: 65%}
-}
-#Skill-XML {
-    animation: Animate-XML 3s;
-    -webkit-animation: Animate-XML 3s;
-    -moz-animation: Animate-XML 3s;
-    -o-animation: Animate-XML 3s;
-    width: 84%;
-    height: 50px;
-    position: absolute;
-    background-color: #5aa669;
-}
-@keyframes Animate-XML {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-webkit-keyframes Animate-XML {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-moz-keyframes Animate-XML {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}@-o-keyframes Animate-XML {
-    from {
-    width: 10px;
-}
-to {
-    width: 40%}
-}
-#Skill-mongo {
-    animation: Animate-C 3s;
-    -webkit-animation: Animate-C 3s;
-    -moz-animation: Animate-C 3s;
-    -o-animation: Animate-C 3s;
-    width: 70%;
-    height: 50px;
-    position: absolute;
-    background-color: #970cc1;
-}
-@keyframes Animate-C {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-webkit-keyframes Animate-C {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-moz-keyframes Animate-C {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}@-o-keyframes Animate-C {
-    from {
-    width: 10px;
-}
-to {
-    width: 30%}
-}
-#Skill-JAVA {
-    animation: Animate-JAVA 3s;
-    -webkit-animation: Animate-JAVA 3s;
-    -moz-animation: Animate-JAVA 3s;
-    -o-animation: Animate-JAVA 3s;
-    width: 60%;
-    height: 50px;
-    position: absolute;
-    background-color: #8e930c;
-}
-@keyframes Animate-JAVA {
-    from {
-    width: 10px;
-}
-to {
-    width: 25%}
-}@-webkit-keyframes Animate-JAVA {
-    from {
-    width: 10px;
-}
-to {
-    width: 25%}
-}@-moz-keyframes Animate-JAVA {
-    from {
-    width: 10px;
-}
-to {
-    width: 25%}
-}@-o-keyframes Animate-JAVA {
-    from {
-    width: 10px;
-}
-to {
-    width: 25%}
-}
-#Skill-PHP {
-    animation: Animate-PHP 3s;
-    -webkit-animation: Animate-PHP 3s;
-    -moz-animation: Animate-PHP 3s;
-    -o-animation: Animate-PHP 3s;
-    width: 75%;
-    height: 50px;
-    position: absolute;
-    background-color: #5A69A6;
-}
-@keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}@-webkit-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}@-moz-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}@-o-keyframes Animate-PHP {
-    from {
-    width: 10px;
-}
-to {
-    width: 50%}
-}
-#Skill-SQL {
-    animation: Animate-SQL 3s;
-    -webkit-animation: Animate-SQL 3s;
-    -moz-animation: Animate-SQL 3s;
-    -o-animation: Animate-SQL 3s;
-    width: 80%;
-    height: 50px;
-    position: absolute;
-    background-color: #23b1db;
-}
-@keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}@-webkit-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}@-moz-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}@-o-keyframes Animate-SQL {
-    from {
-    width: 10px;
-}
-to {
-    width: 80%}
-}
-#Skill-VBNET {
-    animation: Animate-VBNET 3s;
-    -webkit-animation: Animate-VBNET 3s;
-    -moz-animation: Animate-VBNET 3s;
-    -o-animation: Animate-VBNET 3s;
-    width: 50%;
-    height: 50px;
-    position: absolute;
-    background-color: #f8a51e;
-}
-@keyframes Animate-VBNET {
-    from {
-    width: 10px;
-}
-to {
-    width: 35%}
-}@-webkit-keyframes Animate-VBNET {
-    from {
-    width: 10px;
-}
-to {
-    width: 35%}
-}@-moz-keyframes Animate-VBNET {
-    from {
-    width: 10px;
-}
-to {
-    width: 35%}
-}@-o-keyframes Animate-VBNET {
-    from {
-    width: 10px;
-}
-to {
-    width: 35%}
-}
-.Skill-Area {
-    z-index: 1;
-    float: left;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 15px;
-    text-shadow: none;
-    color: #fff;
-    font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
-.PercentText {
-    z-index: 3;
-    position: relative;
-    padding-right: 15px;
-    margin-top: 15px;
-    float: right;
-    text-shadow: none;
-    color: #fff;
-    font-family: Lato-Regular, sans-serif;
-    font-size: 18px;
-}
