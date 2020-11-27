@@ -21,8 +21,8 @@
       <div class="container text-center">
          <div class="my-box">
             <img src="./images/header-e.jpg" alt="me codine">
-            <h1>Emad Ibrahim</h1>
-            <h2> Développeur Web</h2>
+            <h1 class="heading1">Emad Ibrahim</h1>
+            <h2 class="heading2"> Développeur Web</h2>
          </div>
       </div>
       <div class="scroll-btn">
@@ -47,10 +47,10 @@
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-               <a class="nav-link" href="#top">HOME</a>
+               <a class="nav-link" href="#top">Accueil</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#about">À propos de moi</a>
+               <a class="nav-link" href="#about">Moi</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="#resume">CV</a>
@@ -59,7 +59,7 @@
                <a class="nav-link" href="#projects">PROJECTS</a>
              </li> -->
              <li class="nav-item">
-               <a class="nav-link " href="#contact">CONTACT</a>
+               <a class="nav-link " href="#contact">Contact</a>
              </li>
            </ul>
          </div>
@@ -67,8 +67,8 @@
       </div>
       <!---ABOUT START-->
       <div class="container" id="props">
-         <div class="col-md-6">
-            <img src="./images/about.jpeg" alt="">
+         <div class="col-md-12">
+            <!-- <img src="./images/about.jpeg" alt=""> -->
             <h3>À propos de moi</h3>
             <p>  Après mon arrivée en France en 2017, et après deux ans de cours de français,
                 j'ai réussi à rejoindre une formation “développeur Full-Stack” chez Konexio en Mai dernier. 
@@ -111,7 +111,7 @@
 
                <p>Javascript</p>
                <div class="progress">
-                  <div class="progress-bar" style="width: 50%;">50%</div>
+                  <div class="progress-bar" style="width: 50%; color: #ecf085;">50%</div>
                </div>
                <p>Bootstrap</p>
                <div class="progress">
@@ -169,26 +169,30 @@
       <div class="container">
          <div class="row">
             <div class="col-md-6">
-               <h3 class="text-center">FORMATION</h3>
+               <h3 class="text-center">FORMATIONS</h3>
                <ul class="timeline">
                   <li>
-                     <h4>  Développeur Full-Stack MERN chez Konexio </h4>
-                      <p>Création de site internet / Création d’applications mobiles<br>
-                        <span> Mai 2020 -octobre 2020 </span><br>
+                     <h4>  Développeur Full-Stack MERN chez <span class="konexio"> Konexio </span>  </h4>
+                      <p><span> Mai 2020 -octobre 2020 </span><br>
+                        <p class="discr"> Création de site internet / Création d’applications mobiles</p> <br>
+                        
                         <b>Front-End</b>  Javascript, HTML, CSS, Bootstrap, ReactJS/Redux <br>
                         <b>Front-End</b>  NodeJS, ExpressJS, MongoDB <br>
                         <!-- <b>Location</b> - Cario Egypt  -->
                       </p>
                   </li>
                   <li>
-                     <h4> Formation Compétences Numériques Fondamentales avec SIMPLON </h4>
+                     <h4> Formation Compétences Numériques Fondamentales avec <span class="simplon">SIMPLON</span>  </h4>
                       <p> <span>Novembre 2019 – Décembre 2019 </span> <br>
                         6 semaines de formation aux bases de l’informatique<br>
                       </p>
                   </li>
                   <li>
-                     <h4> Cours de français et accompagnement professionnel </h4>
-                     <p>au sein de l’association Aurore – à Paris<br>
+                     <h4>  
+                        Cours de français et accompagnement Professionnelle au sein de l’association <span class="aurore"> Aurore</span>  – à Paris
+
+                     </h4>
+                     <p><br>
                        <span> ​​Septembre 2019 – Mai 2020 </span> <br>
                         40 heures par semaine.
                         
@@ -205,18 +209,19 @@
 
                </ul>
             </div>
-
+            <br> 
             <!--experience-->
 
             <div class="col-md-6">
-               <h3 class="text-center">EXPERIENCE PROFESSIONNEL</h3>
+               <h3 class="text-center">EXPERIENCES PROFESSIONNELLES</h3>
                <ul class="timeline">
                   <li>
                      <h4>Barista, Dunes Lounge, Caire, Egypte</h4>
-                      <p>Création de site internet / Création d’applications mobiles<br>
-                        <span> Mai 2012 -2016 </span><br>
+                     <p>
+                        <span> Mai 2012 -2016 </span>
+                        <br>                        
                         <b>En parallèle de mes études de droit, je travaillais dans un établissement fréquenté du Caire en tant que Barista. Je gérais la préparation et l’encaissement des commandes, les relation clients...</b>
-                      </p>
+                     </p>
                   </li>
                   <br>
                   <li>
@@ -285,7 +290,7 @@
          <div class="row">
             <div class="col-md-4">
                <i class="fa fa-phone"></i>
-               <p>+33782808140</p>
+               <p>+33 7 82 80 81 40</p>
             </div>
             <div class="col-md-4">
                <i class="fa fa-envelope"></i>
@@ -294,9 +299,9 @@
             
             <button type="button" class="btn btn-primary text-center"> 
                <i class="fa fa-download "></i> 
-                <a href="./images/CVEMADPDF.pdf"> Mon CV en français</a>
-                <i class="fa fa-download "></i> 
-                <a href="./images/CVEMADPDF.pdf"> Mon CV en anglais</a>
+                <a target="_blank" href="./images/CVEMADPDF.pdf"> Mon CV en français</a>
+                <!-- <i class="fa fa-download "></i> 
+                <a href="./images/CVEMADPDF.pdf"> Mon CV en anglais</a> -->
             </button>
          </div>
       </div>
