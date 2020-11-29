@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Lobster&display=swap');
 body {
     margin: 0%;
     padding: 0%;
@@ -30,14 +31,19 @@ body {
 }
 .my-box img {
     width: 50%;
-    border: 1px solid #00083d;
+    border: 1px solid #cecfd3;
     border-radius: 50%;
+    margin-bottom: 15px;
 
 }
-.my-box h1, h2 {
+.my-box h1 {
     color: #FFF;
-    
-    font-family: 'Roboto', sans-serif;
+    margin: 10px auto;
+    font-family: 'Lobster', cursive;
+}
+.my-box h2 {
+    background: #f5f1f2;
+    font-family: 'Heebo', sans-serif;
 }
 
 #info {
@@ -182,6 +188,9 @@ body {
 .nav-link {
     color: #00083d !important;
 
+}
+.nav-link:hover {
+    border-bottom: 2px #fff solid;
 }
 .skills-bar {
     margin: 5%;
@@ -369,10 +378,12 @@ body {
 /*------CONTACT-----*/
 .contact {
     padding-top: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 2), rgba(0,0,0,0.7));
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: #00083d;
+    /* background: linear-gradient(rgba(0, 0, 0, 2), rgba(0,0,0,0.7));
+    background-position: center; */
+    /* background-attachment: fixed;
+    background-size: cover; */
+
 }
 
 .contact .row {
