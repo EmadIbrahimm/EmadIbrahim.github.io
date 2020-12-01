@@ -14,11 +14,11 @@ var tl = new TimelineMax({});
 // .fromTo(headingTwo, 0.5, {opacity: 0, x:30}, {opacity:1, x:0}, "1")
 
 
-// btn.addEventListener('mouseenter', () => {
-// 	body.classList.add('show');
-// });
+btn.addEventListener('mouseenter', () => {
+	body.classList.add('show');
+});
 
-// btn.addEventListener('mouseleave', () => {
-// 	body.classList.remove('show');
-// });
+btn.addEventListener('mouseleave', () => {
+	body.classList.remove('show');
+});
 
