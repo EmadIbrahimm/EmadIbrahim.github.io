@@ -133,8 +133,8 @@ body {
     background: rgba(255,255,255,0.1);
 }
 #props p {
-    text-align: left;
-    align-content: flex-start;
+    text-align: center;
+    /* align-content: flex-start; */
 }
 #props h3 {
     text-align: center;
